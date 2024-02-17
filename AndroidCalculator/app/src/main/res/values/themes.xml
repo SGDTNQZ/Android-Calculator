@@ -14,8 +14,8 @@
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/white</item>
+        <item name="background">@drawable/button_shape</item>
         <item name="backgroundTint">@color/light_gray</item>
-        <item name="background">@drawable/button_round</item>
     </style>
     <style name="button_number_style">
         <item name="android:layout_width">match_parent</item>
@@ -26,7 +26,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/white</item>
         <item name="backgroundTint">@color/dark_liver</item>
-        <item name="background">@drawable/button_round</item>
+        <item name="background">@drawable/button_shape</item>
     </style>
     <style name="button_actions_style">
         <item name="android:layout_width">match_parent</item>
@@ -37,6 +37,6 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/white</item>
         <item name="backgroundTint">@color/vivid_gamboge</item>
-        <item name="background">@drawable/button_round</item>
+        <item name="background">@drawable/button_shape</item>
     </style>
 </resources>
