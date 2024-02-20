@@ -39,4 +39,17 @@
         <item name="backgroundTint">@color/vivid_gamboge</item>
         <item name="background">@drawable/button_shape</item>
     </style>
+    
+    <style name="calc2_top_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">100sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginEnd">2sp</item>
+
+        <item name="android:textSize">30sp</item>
+
+        <item name="android:background">@drawable/calc2_top_btn_shape</item>
+
+    </style>
+
 </resources>
