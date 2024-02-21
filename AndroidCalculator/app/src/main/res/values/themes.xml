@@ -6,50 +6,83 @@
     </style>
 
     <style name="Theme.AndroidCalculator" parent="Base.Theme.AndroidCalculator" />
+
     <style name="button_top_style">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent </item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">2dp</item>
+
         <item name="android:layout_weight">1</item>
-        <item name="android:layout_margin">10dp</item>
+
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/white</item>
-        <item name="background">@drawable/button_shape</item>
-        <item name="backgroundTint">@color/light_gray</item>
+
+        <item name="android:background">@drawable/top_button</item>
+        <item name="backgroundTint">@null</item>
     </style>
     <style name="button_number_style">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent </item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_margin">2dp</item>
+
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/white</item>
-        <item name="backgroundTint">@color/dark_liver</item>
-        <item name="background">@drawable/button_shape</item>
+
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/num_btn</item>
     </style>
     <style name="button_actions_style">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent </item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_margin">2dp</item>
+
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/white</item>
-        <item name="backgroundTint">@color/vivid_gamboge</item>
-        <item name="background">@drawable/button_shape</item>
+
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/action_btn</item>
     </style>
     
     <style name="calc2_top_btn">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">100sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:layout_marginEnd">2sp</item>
+        <item name="android:layout_margin">2sp</item>
+
+        <item name="android:textSize">50sp</item>
+
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/calc2_top_btn_shape</item>
+
+    </style>
+
+    <style name="calc2_num_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">2sp</item>
 
         <item name="android:textSize">30sp</item>
 
-        <item name="android:background">@drawable/calc2_top_btn_shape</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/calc2_num_btn</item>
+    </style>
 
+    <style name="calc2_action_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">2sp</item>
+
+        <item name="android:textSize">30sp</item>
+
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/calc2_action_btn</item>
     </style>
 
 </resources>

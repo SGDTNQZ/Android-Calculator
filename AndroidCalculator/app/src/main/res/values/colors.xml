@@ -6,5 +6,7 @@
     <color name="light_gray">#D4D4D2</color>
     <color name="vivid_gamboge">#FF9500</color>
 
+    <color name="orange">#FF9800</color>
     <color name="blue">#3FCDC8</color>
+    <color name="green">#4CAF50</color>
 </resources>

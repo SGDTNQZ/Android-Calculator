@@ -35,15 +35,163 @@
 
             <Button
                 android:id="@+id/calc2_equal_btn"
-                style="@style/calc2_top_btn"
 
-                android:background="@drawable/calc2_top_btn_shape"
+                style="@style/calc2_top_btn"
 
                 android:text="=" />
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+            <Button
+                android:id="@+id/num1_btn"
+
+                style="@style/calc2_num_btn"
+
+                android:text="1" />
+
+            <Button
+                android:id="@+id/num2_btn"
+                style="@style/calc2_num_btn"
+
+                android:background="@drawable/calc2_num_btn"
+
+                android:text="2" />
+
+            <Button
+                android:id="@+id/num3_btn"
+                style="@style/calc2_num_btn"
+
+                android:background="@drawable/calc2_num_btn"
+
+                android:text="3" />
+
+            <Button
+                android:id="@+id/divide_btn"
+                style="@style/calc2_action_btn"
+
+                android:background="@drawable/calc2_action_btn"
+
+                android:text="/"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/num4_btn"
+
+                style="@style/calc2_num_btn"
+
+                android:text="4" />
+
+            <Button
+                android:id="@+id/num5_btn"
+                style="@style/calc2_num_btn"
+
+                android:background="@drawable/calc2_num_btn"
+
+                android:text="5" />
+
+            <Button
+                android:id="@+id/num6_btn"
+                style="@style/calc2_num_btn"
+
+                android:background="@drawable/calc2_num_btn"
+
+                android:text="6" />
+
+            <Button
+                android:id="@+id/minus_btn"
+                style="@style/calc2_action_btn"
+
+                android:background="@drawable/calc2_action_btn"
+
+                android:text="-"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/num7_btn"
+
+                style="@style/calc2_num_btn"
+
+                android:text="7" />
+
+            <Button
+                android:id="@+id/num8_btn"
+                style="@style/calc2_num_btn"
+
+                android:background="@drawable/calc2_num_btn"
+
+                android:text="8" />
+
+            <Button
+                android:id="@+id/num9_btn"
+                style="@style/calc2_num_btn"
+
+                android:background="@drawable/calc2_num_btn"
+
+                android:text="9" />
+
+            <Button
+                android:id="@+id/multiply_btn"
+                style="@style/calc2_action_btn"
+
+                android:background="@drawable/calc2_action_btn"
+
+                android:text="X"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/dot_btn"
+
+                style="@style/calc2_num_btn"
+
+                android:text="." />
+
+            <Button
+                android:id="@+id/zero_btn"
+                style="@style/calc2_num_btn"
+
+                android:background="@drawable/calc2_num_btn"
+
+                android:text="0" />
+
+            <Button
+                android:id="@+id/percent_btn"
+                style="@style/calc2_num_btn"
+
+                android:background="@drawable/calc2_action_btn"
+
+                android:text="%" />
+
+            <Button
+                android:id="@+id/plus_btn"
+                style="@style/calc2_action_btn"
+
+                android:background="@drawable/calc2_action_btn"
+
+                android:text="/"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
