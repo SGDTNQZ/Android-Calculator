@@ -7,27 +7,27 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class iphone_calc_activity extends AppCompatActivity {
 
     TextView answer_tv;
     Button button7, button8, button9, button4, button5, button6, button1, button2, button3, button0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_iphone_calc);
 
-        answer_tv = findViewById(R.id.answer_txtv);
+        answer_tv = findViewById(R.id.tv_answer);
 
-        button7 = findViewById(R.id.num7_btn);
-        button8 = findViewById(R.id.num8_btn);
-        button9 = findViewById(R.id.num9_btn);
-        button4 = findViewById(R.id.num4_btn);
-        button5 = findViewById(R.id.num5_btn);
-        button6 = findViewById(R.id.num6_btn);
-        button1 = findViewById(R.id.num1_btn);
-        button2 = findViewById(R.id.num2_btn);
-        button3 = findViewById(R.id.num3_btn);
-        button0 = findViewById(R.id.num0_btn);
+        button7 = findViewById(R.id.btn7);
+        button8 = findViewById(R.id.btn8);
+        button9 = findViewById(R.id.btn9);
+        button4 = findViewById(R.id.btn4);
+        button5 = findViewById(R.id.btn5);
+        button6 = findViewById(R.id.btn6);
+        button1 = findViewById(R.id.btn1);
+        button2 = findViewById(R.id.btn2);
+        button3 = findViewById(R.id.btn3);
+        button0 = findViewById(R.id.btn0);
 
         button7.setOnClickListener(new View.OnClickListener() {
             @Override

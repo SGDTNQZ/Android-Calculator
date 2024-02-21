@@ -7,6 +7,33 @@
 
     <style name="Theme.AndroidCalculator" parent="Base.Theme.AndroidCalculator" />
 
+    <style name="main_action_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_weight">1</item>
+
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dark_blue</item>
+
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/button_onpress</item>
+    </style>
+    <style name="main_num_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_weight">1</item>
+
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/button_onpress</item>
+    </style>
+
     <style name="button_top_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -60,7 +87,6 @@
         <item name="android:background">@drawable/calc2_top_btn_shape</item>
 
     </style>
-
     <style name="calc2_num_btn">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -72,7 +98,6 @@
         <item name="backgroundTint">@null</item>
         <item name="android:background">@drawable/calc2_num_btn</item>
     </style>
-
     <style name="calc2_action_btn">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
