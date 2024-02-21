@@ -11,11 +11,11 @@
         android:id="@+id/answer_txtv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+
         android:gravity="right"
         android:paddingRight="15dp"
         android:text="0"
-        android:textSize="50dp"/>
+        android:textSize="100dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,11 +30,11 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/C_btn"
+                android:id="@+id/clear_btn"
                 style="@style/main_action_btn"
                 android:text="C"/>
             <Button
-                android:id="@+id/negative_btn_btn"
+                android:id="@+id/negative_btn"
                 style="@style/main_action_btn"
                 android:text="+/-"/>
             <Button
