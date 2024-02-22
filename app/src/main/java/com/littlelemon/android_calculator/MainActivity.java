@@ -27,6 +27,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initViews();
+        numMethod();
+        negativeMethod();
+        clearMethod();
+        operationMethod();
+        answer_method();
+
+    }
+
+    public void initViews(){
         button7 = findViewById(R.id.num7_btn);
         button8 = findViewById(R.id.num8_btn);
         button9 = findViewById(R.id.num9_btn);
@@ -49,14 +59,7 @@ public class MainActivity extends AppCompatActivity {
         multiply_btn = findViewById(R.id.multiply_btn); // X
         divide_btn = findViewById(R.id.divide_btn); // /
 
-        numMethod();
-        negativeMethod();
-        clearMethod();
-        operationMethod();
-        answer_method();
-
     }
-
     public void numMethod(){
         View.OnClickListener buttonNumbers = new View.OnClickListener() {
             @Override
@@ -129,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener clear_txtv = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                previous_tv.setText("");
                 answer_tv.setText("0");
             }
         };
