@@ -15,8 +15,8 @@
 
         android:gravity="right"
         android:paddingRight="15dp"
-        android:text=""
-        android:textSize="70dp"/>
+        android:text="0"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/answer_txtv"
@@ -26,7 +26,9 @@
         android:gravity="right"
         android:paddingRight="15dp"
         android:text="0"
-        android:textSize="100dp"
+        android:textSize="45dp"
+        android:backgroundTint="@null"
+        android:background="@color/light_gray"
         />
 
     <LinearLayout
@@ -43,19 +45,19 @@
 
             <Button
                 android:id="@+id/clear_btn"
-                style="@style/main_action_btn"
+                style="@style/main_action_btn_land"
                 android:text="C"/>
             <Button
                 android:id="@+id/negative_btn"
-                style="@style/main_action_btn"
+                style="@style/main_action_btn_land"
                 android:text="+/-"/>
             <Button
                 android:id="@+id/percent_btn"
-                style="@style/main_action_btn"
+                style="@style/main_action_btn_land"
                 android:text="%"/>
             <Button
                 android:id="@+id/divide_btn"
-                style="@style/main_action_btn"
+                style="@style/main_action_btn_land"
                 android:text="/"/>
         </LinearLayout>
 
@@ -66,19 +68,19 @@
 
             <Button
                 android:id="@+id/num7_btn"
-                style="@style/main_num_btn"
+                style="@style/main_num_btn_land"
                 android:text="7"/>
             <Button
                 android:id="@+id/num8_btn"
-                style="@style/main_num_btn"
+                style="@style/main_num_btn_land"
                 android:text="8"/>
             <Button
                 android:id="@+id/num9_btn"
-                style="@style/main_num_btn"
+                style="@style/main_num_btn_land"
                 android:text="9"/>
             <Button
                 android:id="@+id/multiply_btn"
-                style="@style/main_action_btn"
+                style="@style/main_action_btn_land"
                 android:text="X"/>
         </LinearLayout>
 
@@ -89,19 +91,19 @@
 
             <Button
                 android:id="@+id/num4_btn"
-                style="@style/main_num_btn"
+                style="@style/main_num_btn_land"
                 android:text="4"/>
             <Button
                 android:id="@+id/num5_btn"
-                style="@style/main_num_btn"
+                style="@style/main_num_btn_land"
                 android:text="5"/>
             <Button
                 android:id="@+id/num6_btn"
-                style="@style/main_num_btn"
+                style="@style/main_num_btn_land"
                 android:text="6"/>
             <Button
                 android:id="@+id/minus_btn"
-                style="@style/main_action_btn"
+                style="@style/main_action_btn_land"
                 android:text="-"/>
         </LinearLayout>
 
@@ -112,19 +114,19 @@
 
             <Button
                 android:id="@+id/num1_btn"
-                style="@style/main_num_btn"
+                style="@style/main_num_btn_land"
                 android:text="1"/>
             <Button
                 android:id="@+id/num2_btn"
-                style="@style/main_num_btn"
+                style="@style/main_num_btn_land"
                 android:text="2"/>
             <Button
                 android:id="@+id/num3_btn"
-                style="@style/main_num_btn"
+                style="@style/main_num_btn_land"
                 android:text="3"/>
             <Button
                 android:id="@+id/plus_btn"
-                style="@style/main_action_btn"
+                style="@style/main_action_btn_land"
                 android:text="+"/>
         </LinearLayout>
 
@@ -135,17 +137,17 @@
 
             <Button
                 android:id="@+id/num0_btn"
-                style="@style/main_num_btn"
+                style="@style/main_num_btn_land"
                 android:text="0"/>
             <Button
                 android:id="@+id/dot_btn"
-                style="@style/main_num_btn"
+                style="@style/main_num_btn_land"
                 android:text="."/>
 
             <Button
                 android:id="@+id/equal_btn"
                 android:layout_weight="0.7"
-                style="@style/main_action_btn"
+                style="@style/main_action_btn_land"
                 android:text="="/>
         </LinearLayout>
 

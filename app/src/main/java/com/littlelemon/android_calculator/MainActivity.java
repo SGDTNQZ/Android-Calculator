@@ -9,13 +9,19 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView answer_tv;
+    TextView answer_tv, previous_tv; // Displays the inputting numbers
     Button button7, button8, button9,
             button4, button5, button6,
             button1, button2, button3,
             button0;
 
-    Button clear_btn,negative_btn;
+    Button clear_btn, negative_btn, plus_btn, minus_btn, multiply_btn, divide_btn, equal_btn; // C, +/-, +, -, X, /, =
+
+    String operation, previousText;
+
+    String firstNum, secondNum;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,9 +39,15 @@ public class MainActivity extends AppCompatActivity {
         button0 = findViewById(R.id.num0_btn);
 
         answer_tv = findViewById(R.id.answer_txtv);
+        previous_tv = findViewById(R.id.previous_txtv);
 
-        clear_btn = findViewById(R.id.clear_btn);
-        negative_btn = findViewById(R.id.negative_btn);
+        clear_btn = findViewById(R.id.clear_btn); // C
+        negative_btn = findViewById(R.id.negative_btn); // +/-
+        plus_btn = findViewById(R.id.plus_btn); // +
+        equal_btn = findViewById(R.id.equal_btn); // =
+        minus_btn = findViewById(R.id.minus_btn); // -
+        multiply_btn = findViewById(R.id.multiply_btn); // X
+        divide_btn = findViewById(R.id.divide_btn); // /
 
         View.OnClickListener buttonNumbers = new View.OnClickListener() {
             @Override
@@ -110,5 +122,58 @@ public class MainActivity extends AppCompatActivity {
         };
 
         negative_btn.setOnClickListener(setNumNegative);
+
+
+        View.OnClickListener operation_btn = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                firstNum = answer_tv.getText().toString();
+
+                if(view.getId() == R.id.plus_btn){
+                    operation = "+";
+                } else if (view.getId() == R.id.minus_btn) {
+                    operation = "-";
+                } else if (view.getId() == R.id.multiply_btn) {
+                    operation = "*";
+                } else if (view.getId() == R.id.divide_btn) {
+                    operation = "/";
+                }
+
+                previousText = firstNum + operation;
+                previous_tv.setText(previousText);
+
+                answer_tv.setText("0");
+            }
+        };
+        plus_btn.setOnClickListener(operation_btn);
+        minus_btn.setOnClickListener(operation_btn);
+        multiply_btn.setOnClickListener(operation_btn);
+        divide_btn.setOnClickListener(operation_btn);
+
+
+        equal_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                secondNum = answer_tv.getText().toString();
+                int num1 = Integer.parseInt(firstNum);
+                int num2 = Integer.parseInt(secondNum);
+                int answer = 0;
+
+                if(operation.equals("+")){
+                    answer = num1 + num2;
+                } else if (operation.equals("-")) {
+                    answer = num1 - num2;
+                }else if (operation.equals("*")) {
+                    answer = num1 * num2;
+                }else if (operation.equals("/")) {
+                    answer = num1 / num2;
+                }
+
+                previousText = firstNum + operation + secondNum + "=" + answer;
+
+                previous_tv.setText(previousText);
+                answer_tv.setText("" + answer);
+            }
+        });
     }
 }
