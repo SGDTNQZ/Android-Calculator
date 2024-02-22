@@ -49,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
         multiply_btn = findViewById(R.id.multiply_btn); // X
         divide_btn = findViewById(R.id.divide_btn); // /
 
+        numMethod();
+        negativeMethod();
+        clearMethod();
+        operationMethod();
+        answer_method();
+
+    }
+
+    public void numMethod(){
         View.OnClickListener buttonNumbers = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
                 answer_tv.setText(resultNumber);
             }
         };
-
         button7.setOnClickListener(buttonNumbers);
         button8.setOnClickListener(buttonNumbers);
         button9.setOnClickListener(buttonNumbers);
@@ -95,15 +103,8 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(buttonNumbers);
         button3.setOnClickListener(buttonNumbers);
         button0.setOnClickListener(buttonNumbers);
-
-        View.OnClickListener clear_txtv = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                answer_tv.setText("0");
-            }
-        };
-
-        clear_btn.setOnClickListener(clear_txtv);
+    }
+    public void negativeMethod(){
 
         View.OnClickListener setNumNegative = new View.OnClickListener() {
             @Override
@@ -122,8 +123,19 @@ public class MainActivity extends AppCompatActivity {
         };
 
         negative_btn.setOnClickListener(setNumNegative);
+    }
+    public void clearMethod(){
 
+        View.OnClickListener clear_txtv = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                answer_tv.setText("0");
+            }
+        };
 
+        clear_btn.setOnClickListener(clear_txtv);
+    }
+    public void operationMethod(){
         View.OnClickListener operation_btn = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -149,8 +161,8 @@ public class MainActivity extends AppCompatActivity {
         minus_btn.setOnClickListener(operation_btn);
         multiply_btn.setOnClickListener(operation_btn);
         divide_btn.setOnClickListener(operation_btn);
-
-
+    }
+    public void answer_method(){
         equal_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
